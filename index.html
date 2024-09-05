@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+    <title>escola DNC </title>
+</head>
+<body>
+    <!--menu superior-->
+    <div id="menusuperior">
+        <a href="https://escoladnc.com.br/"><img src= "imagens/logo.svg" id="logo" alt="error"></a>
+        <h1 id="titulo-menusuperior">Dê os primeiros passos da <br>
+             sua carreira em tecnologia </h1>
+        <p id="texto-menusuperior">inscreva-se no curso gratuito de introdução à<br>
+         tecnologia da DNC School e aprenda os principais<br>
+        fundamentos para construir experiências efetivas</p>
+    </div>
+    <!--menu informacional-->
+    <div id="menuinformacional">
+        <p class="textoinformativo"> <img src="icones/certificados.svg" class="icone"  id="certificado"alt="error" >certificado de conclusão</p>
+        <p class="textoinformativo"> <img src="icones/relogio.svg" class="icone" id="relogio" alt="error">4 horas de conteúdo</p>
+        <p class="textoinformativo"> <img src="icones/camera.svg" class="icone" id="camera" alt="error">Aulas online gravadas</p>
+    </div>
+    <!--seçao de video-->
+    <div id="secaovideo">
+        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div> <h1 id="titulovideo">Aprenda com especialistas e <br> comece seu primeiro projeto <br><br>
+        </h1>
+        <p id="textovideo">Conheça o processo de desenvolvimento e entenda como utilizar <br>os principais métodos e ferramentas da área para resolver <br>problemas complexos <br><br>
+
+            Conquiste seu certificado e desenvolva um projeto prático para <br>aplicar seus conhecimentos.</p></div>
+       
+
+    </div>
+    <!--carrossel-->
+    <div id="carrossel">
+    <h1 id="titulocarrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
+    <!--dividir alterações dos cards para nao alterar o restantes do conteúdo na div do carrosel
+        criando uma div dentro da div carrossel agora uma div cards para organizarmos 
+        os cards somente
+        organisamos em class para alterarmos tds de uma so vez-->
+        <div id="divcards">
+            <img id="setaesquerda" onclick="RolarParaEsquerda()" class="seta " src="icones/setaesquerda.svg" alt="error">
+            <img id="leonardo" class="card" src="cards/leonardo.svg" alt="error">
+            <img id="samantha" class="card" src="cards/samantha.svg" alt="error">
+            <img id="bruna" class="card" src="cards/bruna.svg" alt="error">
+            <img id="setadireita" onclick="RolaParaDireita()" class="seta " src="icones/setadireita.svg" alt="error">
+        </div>
+    </div>
+    <!--formulario-->
+    <div id="formulario">
+        <h1 id="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+       <form action="https://api.sheetmonkey.io/form/i1E6SbbLpTNnUx7dKa5fvM" method="post">
+        <input type="text"placeholder="nome"name="Name" required><br>
+        <input type="email"placeholder="email"name="Email" required><br>
+        <input type="number"placeholder="telefone"><br>
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time"/>
+        <button type="submit">Acesse a ementa grátis</button>
+       </form>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
